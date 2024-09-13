@@ -1,0 +1,35 @@
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+  
+    .header-section {
+      max-width: 800px; /* Adjust the width as needed */
+      margin: 0 auto; /* Center the section horizontally */
+      text-align: left; /* Align text to the left */
+  
+      h1 {
+        font-size: 46px;
+        font-weight: bold;
+        color: #000;
+      }
+  
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #000;
+      }
+    }
+  
+    .image-section {
+      margin-top: 40px;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  

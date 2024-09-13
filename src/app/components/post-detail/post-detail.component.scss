@@ -1,0 +1,119 @@
+/* Container for the entire post detail page */
+.post-detail-container {
+  width: 60%;
+  margin: 50px auto;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+/* Post Title */
+.post-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* Post Meta Information (author and date) */
+.post-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.post-author {
+  margin-right: 10px;
+}
+
+.post-date {
+  color: #999;
+}
+
+/* Divider Line */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Post Content */
+.post-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.post-content p {
+  margin: 10px 0;
+}
+
+.post-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.edit-button, .delete-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #30D5C8;  /* Edit button color */
+  color: #000;
+}
+
+.edit-button:hover {
+  background-color: #1ab2a8;  /* Slightly darker shade */
+}
+
+.delete-button {
+  background-color: #e74c3c;  /* Delete button color (red) */
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;  /* Slightly darker shade */
+}
+
+
+.like-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.like-button {
+  padding: 10px 20px;
+  background-color: #30D5C8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.like-button:hover:not([disabled]) {
+  background-color: #1ab2a8;
+}
+
+.mat-snack-bar-container {
+  background-color: #323232;
+  color: #fff;
+}

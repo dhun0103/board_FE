@@ -1,0 +1,270 @@
+// /* Global Styles */
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #000; /* Dark background */
+//     color: #fff; /* White text */
+//     margin: 0;
+//     padding: 0;
+//   }
+  
+//   /* Navigation Bar */
+//   .navbar {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     background-color: #000; /* Match dark background */
+//     padding: 10px 20px;
+//     border-bottom: 2px solid #30D5C8; /* Highlight color border */
+//   }
+  
+//   .logo {
+//     font-size: 24px;
+//     font-weight: bold;
+//     color: #30D5C8; /* Highlight color for logo */
+//   }
+  
+//   .logo-text {
+//     position: relative;
+//   }
+  
+//   .logo-accent {
+//     font-size: 1.2em;
+//     position: relative;
+//     top: -4px;
+//   }
+  
+//   /* Navigation Links */
+//   .nav-links a {
+//     margin: 0 15px;
+//     text-decoration: none;
+//     color: #30D5C8; /* Highlight color for links */
+//     font-weight: bold;
+//   }
+  
+//   .nav-links a:hover {
+//     color: #fff; /* Invert color on hover */
+//   }
+  
+//   /* Search Bar */
+//   .search-bar {
+//     display: flex;
+//     align-items: center;
+//   }
+  
+//   .search-bar input {
+//     padding: 5px;
+//     border: 1px solid #30D5C8; /* Highlight border */
+//     border-radius: 5px 0 0 5px;
+//     background-color: #333; /* Dark background for input */
+//     color: #fff;
+//   }
+  
+//   .search-bar button {
+//     padding: 5px;
+//     border: 1px solid #30D5C8; /* Highlight border */
+//     border-radius: 0 5px 5px 0;
+//     background-color: #30D5C8; /* Highlight button color */
+//     color: white;
+//     cursor: pointer;
+//   }
+  
+//   .search-bar button i {
+//     font-size: 16px;
+//   }
+  
+//   /* Post Table */
+//   .post-table-container {
+//     margin: 20px auto;
+//     width: 80%;
+//     background-color: #1a1a1a; /* Dark background */
+//     border-radius: 8px;
+//     padding: 15px;
+//   }
+  
+//   .post-table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     background-color: #1a1a1a;
+//   }
+  
+//   .post-table th, .post-table td {
+//     border: 1px solid #30D5C8; /* Highlight borders */
+//     padding: 10px;
+//     text-align: center;
+//     color: #fff; /* White text */
+//   }
+  
+//   .post-table th {
+//     background-color: #30D5C8; /* Highlight header background */
+//     color: #000; /* Dark text */
+//   }
+  
+//   .post-table tbody tr:hover {
+//     background-color: #333; /* Slightly lighter hover effect */
+//   }
+  
+//   /* Pagination */
+//   .pagination {
+//     text-align: center;
+//     margin-top: 15px;
+//   }
+  
+//   .pagination button {
+//     margin: 2px;
+//     padding: 8px 12px;
+//     border: 1px solid #30D5C8;
+//     background-color: #000; /* Dark background */
+//     color: #30D5C8; /* Highlight text color */
+//     cursor: pointer;
+//     border-radius: 5px;
+//   }
+  
+//   .pagination button:hover {
+//     background-color: #30D5C8; /* Invert colors on hover */
+//     color: #000;
+//   }
+  
+//   /* Write Button */.write-button-container {
+//     text-align: right;
+//     margin: 20px;
+//   }
+  
+//   .write-button {
+//     padding: 10px 20px;
+//     background-color: #30D5C8; /* Use the highlight color */
+//     color: #000;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     font-size: 16px;
+//   }
+  
+//   .write-button:hover {
+//     background-color: #1ab2a8; /* Slightly darker shade on hover */
+//   }
+
+/* Main container for the post list */
+.post-table-container {
+  background-color: #1b1b1b; /* Dark gray/black background */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #444; /* Subtle border around the table container */
+}
+
+/* Table styling */
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #222; /* Darker background for table */
+  color: #fff; /* White text */
+  border-radius: 8px;
+}
+
+/* Table header */
+.post-table th {
+  background-color: #333; /* Dark gray header */
+  color: #fff;
+  padding: 12px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #444; /* Border to separate header */
+}
+
+/* Table rows */
+.post-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #444; /* Subtle border for row separation */
+  font-size: 14px;
+}
+
+/* Table rows hover effect */
+.post-table tr:hover {
+  background-color: #292929; /* Slightly lighter hover effect */
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #fff;
+  background-color: #333; /* Dark background */
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #555; /* Light gray hover effect */
+}
+
+/* Write button styling */
+.write-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #333; /* Dark button */
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.write-button:hover {
+  background-color: #555; /* Light gray hover effect */
+}
+
+.ad-promo {
+  background-color: #1b1b1b; /* Dark background to match the design */
+  padding: 40px 0;
+  text-align: center;
+  color: #fff; /* White text for contrast */
+}
+
+.ad-promo h1 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff; /* Crisp white color for text */
+  font-family: 'Bodoni Moda', serif; /* A sophisticated, classic font */
+  margin: 0;
+  letter-spacing: 1px; /* Adds spacing between letters for elegance */
+  line-height: 1.4; /* Improved readability */
+}
+
+.ad-promo h1::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #fff; /* Stylish line above text */
+  margin: 0 auto 20px auto;
+}
+
+.ad-promo h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #fff; /* Stylish line below text */
+  margin: 20px auto 0 auto;
+}
+
+/* Optional: Adjust the overall container for better spacing */
+body {
+  background-color: #0d0d0d; /* Dark background to blend everything */
+  color: #fff;
+}
+

@@ -1,0 +1,86 @@
+.contact-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: 0 auto; 
+  
+    .left-section {
+      flex: 1;
+      padding-right: 40px;
+  
+      h1 {
+        font-size: 48px;
+        color: #333; 
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 18px;
+        color: #333;
+      }
+    }
+  
+    .right-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+  
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+  
+        .form-group {
+          display: flex;
+          flex-direction: column;
+  
+          label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 15px;
+          }
+  
+          input,
+          textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+          }
+  
+          textarea {
+            resize: vertical;
+          }
+  
+          &.checkbox-group {
+            grid-column: span 2; /* Make checkboxes full width */
+            display: flex;
+            align-items: center;
+  
+            label {
+              font-weight: normal;
+            }
+          }
+        }
+  
+        button {
+          grid-column: span 2;
+          padding: 12px 20px;
+          background-color: #000;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #333;
+          }
+        }
+      }
+    }
+  }
+  

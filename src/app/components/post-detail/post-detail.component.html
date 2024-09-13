@@ -1,0 +1,36 @@
+
+<div class="post-detail-container" *ngIf="post && post.title">
+  <div class="breadcrumbs">
+    <span>All &gt; Question</span>
+  </div>
+
+  <h1 class="post-title">{{ post.title }}</h1>
+
+  <div class="post-meta">
+    <span class="post-author">{{ post.author }}</span>
+    <span class="post-date">{{ post.createdAt | date:'yyyy-MM-dd' }}</span>  
+    <!-- Format the date -->
+  </div>
+
+  <hr class="divider">
+
+  <div class="post-content">
+    <p>{{ post.content }}</p>
+  </div>
+
+  <div class="post-actions">
+    <button (click)="editPost()" class="edit-button">Edit Post</button>
+    <button (click)="deletePost()" class="delete-button">Delete Post</button>
+  </div>
+
+  <div class="like-container">
+    <button (click)="likePost()" [disabled]="hasLiked" class="like-button">
+      {{ hasLiked ? 'Liked' : 'Like' }}
+    </button>
+    <span>{{ likesCount }} Likes</span>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>

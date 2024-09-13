@@ -1,0 +1,26 @@
+<div class="top-bar-container">
+  <header class="header">
+    <div class="logo">
+      <a [routerLink]="['/']">Décode Studios</a>
+    </div>
+    <div class="menu-icon" (click)="toggleMenu()">
+      <span>Menu</span>
+      <div class="hamburger-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="dropdown-menu" [ngClass]="{ 'active': isMenuOpen }">
+    <div class="close-icon" (click)="toggleMenu()">Close  ✖</div>
+    <ul>
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li><a [routerLink]="['/posts']">Board</a></li>
+      <li><a [routerLink]="['/about-us']">About Us</a></li>
+      <li><a [routerLink]="['/contact-us']">Contact Us</a></li>
+      <!-- Add more menu items here -->
+    </ul>
+  </div>
+</div>
