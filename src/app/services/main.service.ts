@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -7,7 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class MainService {
 
-  private apiUrl = 'http://13.209.10.106/main';
+  private apiUrl = environment.apiUrl;
+
   // private apiUrl = 'http://localhost:8080/main';
 
   constructor(private http: HttpClient) {}
