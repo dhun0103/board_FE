@@ -1,0 +1,93 @@
+.main-top-bar-container {
+    position: absolute;
+    top: 80px;
+    // left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent; /* 투명 배경 */
+    color: white;
+    font-family: 'Arial', sans-serif;
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 90px; /* 좌우 끝에서 간격을 벌리고, 상단에서 약간 내려오기 */
+  
+      .logo a {
+        font-size: 40px; /* 글자 크기 확대 */
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-family: 'Lobster', cursive;
+      }
+  
+      .menu-icon {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+  
+        span {
+          margin-right: 10px;
+          font-size: 22px; /* 글자 크기 조정 */
+        }
+  
+        .hamburger-icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 24px; /* 아이콘 높이 조정 */
+  
+          div {
+            width: 30px; /* 아이콘 너비 조정 */
+            height: 3px;
+            background-color: white;
+          }
+        }
+      }
+    }
+  
+    .dropdown-menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 100%;
+      background-color: #151515;
+      color: white;
+      padding: 20px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+  
+      &.active {
+        transform: translateX(0);
+      }
+  
+      .close-icon {
+        text-align: right;
+        cursor: pointer;
+        font-size: 18px;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding: 20px 0;
+        margin: 0;
+  
+        li {
+          margin: 20px 0;
+  
+          a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  

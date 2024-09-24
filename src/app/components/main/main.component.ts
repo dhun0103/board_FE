@@ -15,17 +15,17 @@ export class MainComponent {
     private mainService: MainService, private router: Router
   ) {}
 
-  onSubmit(): void {
-    if (this.email) {
-      this.mainService.subscribeEmail(this.email).subscribe({
-        next: () => {
-          this.router.navigate(['/posts']);  // Navigate to the bulletin board list page
-        },
-        error: (err) => {
-          console.error('Error subscribing:', err);
-        }
-      });
-    }
-  }
+  // onSubmit(): void {
+  //   if (this.email) {
+  //     this.mainService.subscribeEmail(this.email).subscribe({
+  //       next: () => {
+  //         this.router.navigate(['/posts']);  // Navigate to the bulletin board list page
+  //       },
+  //       error: (err) => {
+  //         console.error('Error subscribing:', err);
+  //       }
+  //     });
+  //   }
+  // }
 
 }

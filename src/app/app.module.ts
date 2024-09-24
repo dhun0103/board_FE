@@ -16,6 +16,7 @@ import { MainComponent } from './components/main/main.component';
 import { FooterBarComponent } from './components/footer-bar/footer-bar.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { MainTopBarComponent } from './components/main-top-bar/main-top-bar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     FooterBarComponent,
     AboutUsComponent,
     ContactUsComponent,
+    MainTopBarComponent,
   ],
   imports: [
     BrowserModule,

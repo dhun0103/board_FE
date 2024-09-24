@@ -1,8 +1,14 @@
 <div class="app-container">
+  <ng-container *ngIf="isMainPage; else otherPage">
+    <app-main-top-bar></app-main-top-bar>
+  </ng-container>
+  <ng-template #otherPage>
     <app-top-bar></app-top-bar>
-    <div class="content">
-      <router-outlet></router-outlet>
-    </div>
-    <app-footer-bar></app-footer-bar>
+  </ng-template>
+
+  <div class="content">
+    <router-outlet></router-outlet>
   </div>
   
+  <app-footer-bar></app-footer-bar>
+</div>

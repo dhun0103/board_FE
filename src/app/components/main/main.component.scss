@@ -35,19 +35,19 @@
   overflow: hidden;
 }
 
-.video-container iframe {
+.video-container video {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100vw;
   height: 100vh;
   transform: translate(-50%, -50%);
-  pointer-events: none;
-  object-fit: cover;
+  object-fit: cover; /* 비디오가 전체 화면을 채우도록 설정 */
+  pointer-events: none; /* 비디오에 마우스 이벤트가 발생하지 않도록 설정 */
 }
 
 @media screen and (max-width: 768px) {
-  .video-container iframe {
+  .video-container video {
     min-width: 100vw;
     min-height: 100vh;
   }

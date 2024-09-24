@@ -10,7 +10,7 @@ export class MainService {
 
   private apiUrl = environment.apiUrl;
 
-  // private apiUrl = 'http://localhost:8080/main';
+  // private apiUrl = 'http://localhost:8080';
 
   constructor(private http: HttpClient) {}
 
