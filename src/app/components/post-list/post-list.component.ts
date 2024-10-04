@@ -22,16 +22,16 @@ export class PostListComponent implements OnInit {
   }
 
   loadPosts(): void {
-    this.postsService.getPosts().subscribe((data: any[]) => {
-      this.posts = data
-        .map(post => ({
+    this.postsService.getPosts().subscribe((response: any) => {
+      this.posts = response.data // 데이터를 response.data로 변경
+        .map((post: any) => ({
           ...post,
-          createdAt: new Date(post.createdAt),
-          updatedAt: new Date(post.updatedAt),
+          createdAt: post.createdAt ? new Date(post.createdAt.split('.')[0]) : null, // createdAt이 있을 때만 처리
         } as Post))
-        .sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime()); // Sort by createdAt
+        .sort((a: Post, b: Post) => b.createdAt?.getTime() - a.createdAt?.getTime()); // Sort by createdAt, createdAt이 없는 경우를 대비
     });
   }
+
 
 
   goToPage(page: number): void {

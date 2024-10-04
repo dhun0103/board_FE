@@ -8,8 +8,8 @@ import { environment } from '../../environments/environment';
 })
 export class LikesService {
 
-  // private apiUrl = 'http://localhost:8080';
-  private apiUrl = environment.apiUrl;
+  private apiUrl = 'http://localhost:8080';
+  // private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 

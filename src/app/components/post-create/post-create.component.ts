@@ -42,7 +42,7 @@ export class PostCreateComponent {
       this.postsService.createPost(this.post).subscribe({
         next: () => {
           // Navigate back to the home page after publishing
-          this.router.navigate(['/posts']);
+          this.router.navigate(['/post']);
         },
         error: (err) => {
           console.error('Error creating post:', err);

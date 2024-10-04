@@ -9,8 +9,8 @@ import { environment } from '../../environments/environment';
 })
 export class PostsService {
 
-  // private apiUrl = 'http://localhost:8080'; // API URL
-  private apiUrl = environment.apiUrl;
+  private apiUrl = 'http://localhost:8080'; // API URL
+  // private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
